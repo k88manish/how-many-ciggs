@@ -103,26 +103,11 @@ const Home: React.FC = () => {
           </div>
         ) : airQuality ? (
           <>
-            {/* <div className="space-y-6">
-              <div className="text-center">
-                <p className="text-2xl font-bold">{airQuality.location}</p>
-                <div className="mt-4 p-4 bg-white bg-opacity-20 rounded-lg">
-                  <p className="text-4xl font-bold text-yellow-400">
-                    {airQuality.equivalentCigarettes}
-                  </p>
-                  <p className="text-sm mt-2">cigarettes today</p>
-                </div>
-                <div className="mt-4 p-4 bg-white bg-opacity-20 rounded-lg">
-                  <p className="text-3xl font-bold text-blue-400">
-                    AQI: {airQuality.aqi}
-                  </p>
-                </div>
-              </div>
-            </div> */}
             <AQIVisualizer aqi={airQuality.aqi} />
             <div className="max-w-2xl mx-auto bg-gray-800 text-white p-6 rounded-lg w-full mt-4">
-              <div className="text-8xl font-bold text-center my-4">{airQuality.equivalentCigarettes}</div>
-              <div className="text-2xl font-bold text-blue-400 mt-4">AQI: {airQuality.aqi}</div>
+              {/* <div className="text-8xl font-bold text-center my-4">{airQuality.equivalentCigarettes}</div> */}
+              {/* <div className="text-2xl font-bold text-blue-400 mt-4">AQI: {airQuality.aqi}</div> */}
+              <div className="text-8xl font-bold text-center my-4">AQI: {airQuality.aqi}</div>
             </div>
           </>
         ) : null}
