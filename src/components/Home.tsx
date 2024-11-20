@@ -89,7 +89,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-white">
-      <div className="max-w-l w-full px-6 py-8 bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg">
+      <div className="max-w-3xl w-full px-6 py-8 bg-white bg-opacity-10 backdrop-blur-md rounded-lg shadow-lg">
         <h1 className="text-5xl font-extrabold mb-2 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
           How many cigarettes are you breathing?
         </h1>
