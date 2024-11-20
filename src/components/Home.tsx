@@ -82,18 +82,8 @@ const Home: React.FC = () => {
               </div>
             </div> */}
             <div className="bg-gray-800 text-white p-6 rounded-lg w-full mt-4">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-yellow-400 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                  <h2 className="text-xl font-bold">Air Quality Monitor</h2>
-                </div>
-              </div>
-              <p>How many cigarettes are you breathing today?</p>
-              <div className="text-6xl font-bold text-center my-4">9</div>
-              <p className="text-gray-400">cigarettes today</p>
-              <div className="text-2xl font-bold text-blue-400 mt-4">AQI: 203</div>
+              <div className="text-8xl font-bold text-center my-4">{airQuality.equivalentCigarettes}</div>
+              <div className="text-2xl font-bold text-blue-400 mt-4">AQI: {airQuality.aqi}</div>
               <p className="text-gray-400">Moderate, but please hold your breath</p>
             </div>
           </>
