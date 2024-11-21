@@ -56,7 +56,7 @@ const getAQIMessage = (aqi: number) => {
         {/* AQI Message Component */}
         <div className="bg-gray-800 text-white p-6 rounded-lg shadow-xl">
           <h3 className="text-2xl font-bold mb-2">{title}</h3>
-          <p className="text-gray-400">{message}</p>
+          <p className="text-xl text-gray-400">{message}</p>
           <div className="mt-4 text-sm">
             {aqi > 150 && (
               <p className="text-yellow-400">
